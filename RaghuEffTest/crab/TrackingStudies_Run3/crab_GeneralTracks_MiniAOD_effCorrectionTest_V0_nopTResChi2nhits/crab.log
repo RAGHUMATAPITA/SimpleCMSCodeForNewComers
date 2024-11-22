@@ -1,0 +1,179 @@
+DEBUG 2024-06-05 10:01:00.988 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-06-05 10:01:00.988 UTC: 	 Running on: Linux lxplus806.cern.ch 4.18.0-513.24.1.el8_9.x86_64 #1 SMP Thu Mar 14 14:20:09 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux 8.9 (Ootpa)
+DEBUG 2024-06-05 10:01:00.988 UTC: 	 Executing command: 'submit'
+DEBUG 2024-06-05 10:01:00.999 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+INFO 2024-06-05 10:01:01.070 UTC: 	 Will use CRAB configuration file crab_config_MCRecoDebug.py
+DEBUG 2024-06-05 10:01:01.070 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-06-05 10:01:01.361 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2024-06-05 10:01:01.675 UTC: 	 Checking credentials
+DEBUG 2024-06-05 10:01:01.675 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2024-06-05 10:01:01.675 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-06-05 10:01:01.675 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2024-06-05 10:01:02.126 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-06-05 10:01:02.126 UTC: 	 Getting proxy life time left
+DEBUG 2024-06-05 10:01:02.126 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2024-06-05 10:01:02.542 UTC: 	 output : 683277
+683277
+
+ error: 
+ retcode : 0
+DEBUG 2024-06-05 10:01:02.542 UTC: 	 Proxy valid for 189:47:57 hours
+DEBUG 2024-06-05 10:01:02.542 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-06-05 10:01:02.592 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=817881/CN=Robot: cms crab
+DEBUG 2024-06-05 10:01:02.592 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2024-06-05 10:01:03.021 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2024-06-05 10:01:03.022 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-06-05 10:01:03.022 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-06-05 10:01:03.316 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=817881/CN=Robot: cms crab
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=817881/CN=Robot: cms crab
+  timeleft: 535:59:23  (22.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-06-05 10:01:03.316 UTC: 	 Myproxy is valid: 1929540
+DEBUG 2024-06-05 10:01:03.317 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 22 days, 7:59:00
+DEBUG 2024-06-05 10:01:03.317 UTC: 	 Command use: submit
+DEBUG 2024-06-05 10:01:03.317 UTC: 	 Options use: ['-c', 'crab_config_MCRecoDebug.py']
+DEBUG 2024-06-05 10:01:03.317 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 CRABClient version: v3.240416
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Instance is prod
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Command api workflow
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Started submission
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Working on /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits
+DEBUG 2024-06-05 10:01:03.362 UTC: 	 Encoded data for curl request: subresource=backendurls
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 Loading required information from the environment
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 Loading required information from the environment
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 UNIQUE NAME: tarUUID d2d98e39-94b6-48d8-aef2-c7a4027a417a 
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'TrackingStudies_Run3'
+config.General.requestName = 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits'
+config.General.transferLogs = False
+config.section_('JobType')
+config.JobType.psetName = '../cfg/EfficiecnyTest_genTrk_cfg.py'
+config.JobType.inputFiles = ['../cfg/CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db']
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4/USER'
+config.Data.outputDatasetTag = 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits'
+config.Data.totalUnits = -1
+config.Data.publication = False
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun'
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'phys03'
+config.Data.unitsPerJob = 10
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2024-06-05 10:01:03.453 UTC: 	 self.config.JobType.psetName: ../cfg/EfficiecnyTest_genTrk_cfg.py
+INFO 2024-06-05 10:01:03.455 UTC: 	 Importing CMSSW configuration ../cfg/EfficiecnyTest_genTrk_cfg.py
+INFO 2024-06-05 10:01:04.965 UTC: 	 Finished importing CMSSW configuration ../cfg/EfficiecnyTest_genTrk_cfg.py
+DEBUG 2024-06-05 10:01:04.965 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/PSet.py
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 The following TFile output files will be collected: ['Eff_test_nopTresChi2_nhits0_MiniAOD.root']
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 Loading required information from the environment
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1
+DEBUG 2024-06-05 10:01:05.002 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/d2d98e39-94b6-48d8-aef2-c7a4027a417adefault.tgz
+DEBUG 2024-06-05 10:01:05.003 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/bin
+DEBUG 2024-06-05 10:01:05.003 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/bin to tarball
+DEBUG 2024-06-05 10:01:05.006 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/python
+DEBUG 2024-06-05 10:01:05.006 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/python to tarball
+DEBUG 2024-06-05 10:01:05.387 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/cfipython
+DEBUG 2024-06-05 10:01:05.387 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/cfipython to tarball
+DEBUG 2024-06-05 10:01:05.820 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/lib
+DEBUG 2024-06-05 10:01:05.820 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/lib to tarball
+DEBUG 2024-06-05 10:01:06.409 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/biglib
+DEBUG 2024-06-05 10:01:06.409 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/biglib to tarball
+DEBUG 2024-06-05 10:01:06.410 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/module
+DEBUG 2024-06-05 10:01:06.410 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/config/SCRAM/hooks
+DEBUG 2024-06-05 10:01:06.410 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/config/SCRAM/hooks to tarball
+DEBUG 2024-06-05 10:01:07.598 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/data to tarball
+DEBUG 2024-06-05 10:01:09.092 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/interface to tarball
+DEBUG 2024-06-05 10:01:09.151 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/python to tarball
+DEBUG 2024-06-05 10:01:09.201 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/Configuration/data to tarball
+DEBUG 2024-06-05 10:01:09.282 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/Configuration/python to tarball
+DEBUG 2024-06-05 10:01:10.119 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/data to tarball
+DEBUG 2024-06-05 10:01:10.125 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/interface to tarball
+DEBUG 2024-06-05 10:01:10.133 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:10.167 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EventAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:10.231 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/JetAnalysis/interface to tarball
+DEBUG 2024-06-05 10:01:10.242 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/JetAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:10.361 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/MuonAnalysis/interface to tarball
+DEBUG 2024-06-05 10:01:10.438 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/MuonAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:10.647 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/TrackAnalysis/interface to tarball
+DEBUG 2024-06-05 10:01:10.722 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/TrackAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:10.873 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/ZDCAnalysis/python to tarball
+DEBUG 2024-06-05 10:01:11.231 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/MergingProducer/generalAndHiPixelTracks/python to tarball
+DEBUG 2024-06-05 10:01:11.295 UTC: 	 Adding file ../cfg/CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db to tarball
+DEBUG 2024-06-05 10:01:11.633 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/d2d98e39-94b6-48d8-aef2-c7a4027a417adefault.tgz (3.128906.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-06-05 10:01:12.240 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz
+DEBUG 2024-06-05 10:01:12.346 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz" -F "AWSAccessKeyId=e57ff634b5334df9819ae3f956de5ca6" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDYtMDVUMTE6MDE6MTJaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzLzMwZWE5NzA3NTRhOWM4NGFlY2JmZDk5MGJmMzAxZTAwZDJjYTI5NGZjNGMxMjEzOGYzYzYxMDZjNDVhZDI0ZDEudGFyLmd6In1dfQ==" -F "signature=YnXz3pOW+YyX0f3O8x/A9v6hxo4=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/d2d98e39-94b6-48d8-aef2-c7a4027a417adefault.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-06-05 10:01:13.487 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-06-05 10:01:13.487 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/d2d98e39-94b6-48d8-aef2-c7a4027a417adefault.tgz successully uploaded to S3
+DEBUG 2024-06-05 10:01:13.487 UTC: 	 Loading required information from the environment
+DEBUG 2024-06-05 10:01:13.487 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1
+DEBUG 2024-06-05 10:01:13.487 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/debugFiles.tgz
+DEBUG 2024-06-05 10:01:13.494 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/debugFiles.tgz (2 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-06-05 10:01:13.496 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=ffb53a52b32fff8e9709609bc3772f41a4a004d90ef76ac04c1fd83b6009becb.tar.gz
+DEBUG 2024-06-05 10:01:13.616 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/ffb53a52b32fff8e9709609bc3772f41a4a004d90ef76ac04c1fd83b6009becb.tar.gz" -F "AWSAccessKeyId=e57ff634b5334df9819ae3f956de5ca6" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDYtMDVUMTE6MDE6MTNaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzL2ZmYjUzYTUyYjMyZmZmOGU5NzA5NjA5YmMzNzcyZjQxYTRhMDA0ZDkwZWY3NmFjMDRjMWZkODNiNjAwOWJlY2IudGFyLmd6In1dfQ==" -F "signature=bgeSIZV/id9cI+WnQrjKl8CGmJM=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/inputs/debugFiles.tgz successully uploaded to S3
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 Result uploading input files: 30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz 
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 submit() - self.configuration from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferOutputs = True
+config.General.workArea = 'TrackingStudies_Run3'
+config.General.requestName = 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits'
+config.General.transferLogs = False
+config.section_('JobType')
+config.JobType.psetName = '../cfg/EfficiecnyTest_genTrk_cfg.py'
+config.JobType.inputFiles = ['../cfg/CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db']
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4/USER'
+config.Data.outputDatasetTag = 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits'
+config.Data.totalUnits = -1
+config.Data.publication = False
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun'
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'phys03'
+config.Data.unitsPerJob = 10
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 submit() - self.configreq {'dryrun': 0, 'workflow': 'crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4/USER', 'primarydataset': '', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 10, 'totalunits': -1, 'lfn': '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': []}
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 submit() - jobconfig {'addoutputfiles': [], 'tfileoutfiles': ['Eff_test_nopTresChi2_nhits0_MiniAOD.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc11', 'jobsw': 'CMSSW_13_2_5_patch1', 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4/USER', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz', 'debugfilename': 'ffb53a52b32fff8e9709609bc3772f41a4a004d90ef76ac04c1fd83b6009becb.tar.gz', 'jobtype': 'Analysis'}
+INFO 2024-06-05 10:01:13.649 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2024-06-05 10:01:13.649 UTC: 	 Submitting {'dryrun': 0, 'workflow': 'crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4/USER', 'primarydataset': '', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 10, 'totalunits': -1, 'lfn': '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['Eff_test_nopTresChi2_nhits0_MiniAOD.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc11', 'jobsw': 'CMSSW_13_2_5_patch1', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz', 'debugfilename': 'ffb53a52b32fff8e9709609bc3772f41a4a004d90ef76ac04c1fd83b6009becb.tar.gz'} 
+DEBUG 2024-06-05 10:01:13.650 UTC: 	 Encoded data for curl request: dryrun=0&workflow=crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits&saveoutput=1&savelogsflag=0&inputdata=%2FMinBias_PbPb_5p36TeV_Hydjet_v1%2Fsarteaga-MinBias_PbPb_5p36TeV_Hydjet_MINIAOD_v5-45d226c4498e665b330b684cce3e6ab4%2FUSER&primarydataset=&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=FileBased&algoargs=10&totalunits=-1&lfn=%2Fstore%2Fgroup%2Fphys_heavyions%2Frpradhan%2FTrackingEffTables2022PbPbRun&publication=0&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&publishname2=GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=1&maxmemory=2000&priority=10&nonprodsw=0&asyncdest=T2_CH_CERN&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=0&partialdataset=0&jobarch=el8_amd64_gcc11&jobsw=CMSSW_13_2_5_patch1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&cachefilename=30ea970754a9c84aecbfd990bf301e00d2ca294fc4c12138f3c6106c45ad24d1.tar.gz&debugfilename=ffb53a52b32fff8e9709609bc3772f41a4a004d90ef76ac04c1fd83b6009becb.tar.gz&tfileoutfiles=Eff_test_nopTresChi2_nhits0_MiniAOD.root
+DEBUG 2024-06-05 10:01:13.715 UTC: 	 Result: {'result': [{'RequestName': '240605_100113:rpradhan_crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits'}]}
+INFO 2024-06-05 10:01:13.717 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2024-06-05 10:01:13.717 UTC: 	 Task name: 240605_100113:rpradhan_crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits
+INFO 2024-06-05 10:01:13.717 UTC: 	 Project dir: TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits
+INFO 2024-06-05 10:01:13.717 UTC: 	 Please use ' crab status -d TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits ' to check how the submission process proceeds.
+DEBUG 2024-06-05 10:01:13.717 UTC: 	 About to return
+INFO 2024-06-05 10:01:13.719 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/ForEffTest/CMSSW_13_2_5_patch1/src/Analyzers/RaghuEffTest/crab/TrackingStudies_Run3/crab_GeneralTracks_MiniAOD_effCorrectionTest_V0_nopTResChi2nhits/crab.log
